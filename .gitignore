@@ -1,0 +1,30 @@
+# Credentials: keep every .env variant out of git, except the shareable template
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Workbooks you test with
+*.twb
+*.twbx
+
+# Reports the scripts write (names and email addresses)
+output/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# The author's working files: kept on disk, never on GitHub. Each entry's notes/
+# folder holds design and build notes for blog posts; the READMEs are the docs.
+PROJECT_LOG.md
+CLAUDE.md
+BLOG_NOTES.md
+notes/

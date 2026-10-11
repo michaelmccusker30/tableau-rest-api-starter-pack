@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8
+# Only for 01-publishing-workbooks/1a_publish_workbook_handbuilt.py (the hand-built TSC script).
+# TSC 0.40 crashes on import on Python 3.9 despite claiming support, so 3.9 stays below it.
+tableauserverclient>=0.32,<0.40; python_version < "3.10"
+tableauserverclient>=0.32; python_version >= "3.10"
