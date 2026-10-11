@@ -61,4 +61,4 @@ It's written **before the first delete**. It holds what you'd need to recreate a
 | Names for the backup | `GET /workbooks`, `/views` (all pages), only if something will be deleted |
 | Delete | `DELETE /sites/{site-id}/subscriptions/{id}` |
 
-**Fewer calls, the original's idea.** On a site with 20,000 users and 150 subscribers, looking up only the subscribers is 150 small calls instead of paging through every user. On a small site, listing every user could be fewer calls. The original chose the approach that scales with what you're cleaning up, and so does this.
+**Fewer calls.** On a site with 20,000 users and 150 subscribers, looking up only the subscribers is 150 small calls instead of paging through every user. On a small site, listing every user could be fewer calls. This script takes the approach that scales with what you're cleaning up.

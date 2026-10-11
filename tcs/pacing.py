@@ -14,7 +14,7 @@ RateBudget spends a budget of calls per rolling hour:
     every 25 calls in a row that succeed win back a little, up to the limit
     you set (slow down fast, speed up slowly)
 
-Adapted from the author's earlier hand-built retry script, which worked this out first.
+Back off fast, recover slowly: the same idea networks use to share a busy link.
 """
 
 from __future__ import annotations

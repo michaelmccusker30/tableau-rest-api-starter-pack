@@ -100,7 +100,7 @@ def changes_file(folder: Path, stem: str):
         return path, list(csv.DictReader(handle))
 
 
-def test_grant_view_from_a_users_csv_like_the_original(perm_script, fake, ruled, env_file, tmp_path):
+def test_grant_view_from_a_users_csv(perm_script, fake, ruled, env_file, tmp_path):
     team = tmp_path / "team.csv"
     team.write_text("USERNAME\njo@example.com\nSAM@example.com\nghost@example.com\n")
     args = ["--env-file", str(env_file), "--output-dir", str(tmp_path), "--grant", "view", "--users-csv", str(team),

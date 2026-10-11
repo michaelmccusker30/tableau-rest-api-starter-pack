@@ -60,4 +60,4 @@ A site with N items takes N connection calls: on a test site with 165 items, abo
 
 ## What's deliberately not here
 
-Changing the credentials. The original script could bulk-update a username and password across everything that used it. That's the riskiest operation in the old collection: the old values can't be read back, so one wrong password breaks every refresh at once. This entry is the safe half: find everything first. An update entry would need a test-one-first step and a record of what changed; it's noted for later.
+Changing the credentials. Bulk-updating a username and password across everything that uses it is about the riskiest thing you can script against a site: the old values can't be read back, so one wrong password breaks every refresh at once. This entry is the safe half: find everything first. An update entry would need a test-one-first step and a record of what changed; it's noted for later.

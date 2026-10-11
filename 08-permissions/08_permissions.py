@@ -83,7 +83,7 @@ examples:
   Report every rule (read-only):
     python 08-permissions/08_permissions.py --yes
 
-  Give everyone in a CSV the View template on one workbook (your original's job):
+  Give everyone in a CSV the View template on one workbook:
     python 08-permissions/08_permissions.py --grant view --users-csv team.csv \\
         --workbook "Finance/Reporting/Budget" --dry-run
 

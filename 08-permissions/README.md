@@ -51,7 +51,7 @@ Review
 
 **The items:** `--workbook "Project/Sub/Workbook"` (repeatable; a bare name is fine if it's unique), `--workbooks-csv FILE` (a Workbook ID column, so an [entry 02](../02-content-inventory/README.md) inventory filtered in Excel works), `--project PATH` (the project's own rules), and `--project-defaults PATH` (the rules new workbooks in it start with).
 
-**The grantees:** `--group NAME`, `--user NAME` (username or email, any case), or `--users-csv FILE` (a Username, User or Email column, as in the original script's `USERNAME`). All repeatable and combinable.
+**The grantees:** `--group NAME`, `--user NAME` (username or email, any case), or `--users-csv FILE` (a Username, User or Email column, such as `USERNAME`). All repeatable and combinable.
 
 Without those flags, you're asked. Pick the items with the project picker, then choose groups from a list, users from a CSV, or users by name, and finally the template.
 

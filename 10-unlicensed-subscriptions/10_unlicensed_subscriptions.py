@@ -7,9 +7,8 @@ When someone loses their licence, their subscriptions stay behind: scheduled
 emails that can no longer be delivered, still taking a slot in the schedule.
 This finds them and, once you've reviewed them, deletes them.
 
-How it keeps API calls down (the idea from the original script): it lists the
-subscriptions first, then looks up only the users who own one, instead of
-every user on the site.
+How it keeps API calls down: it lists the subscriptions first, then looks up
+only the users who own one, instead of every user on the site.
 
 Run it with no arguments for the interactive flow:
   1. subscriptions are listed, and their owners' site roles checked (read-only)
